@@ -1,0 +1,71 @@
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50fr 50fr;
+
+  grid-template-areas: "section sidebar "
+                       "section content1";
+  grid-gap: 0.2rem;
+}
+
+section {
+  background: #0c4bd3;
+  grid-area: section;
+}
+
+#sidebar {
+  background: linear-gradient(to right, #00D7B0, #FF437F);
+  grid-area: sidebar;
+}
+
+#content1 {
+  grid-area: content1;
+  background-image: url(../../../assets/img/banner_inicial.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  color: rgb(255, 255, 255);
+  margin-left: 20px;
+
+}
+
+.text {
+  margin-top: 155px;
+}
+
+p {
+  margin-top: 100px;
+  font-size: 50px;
+}
+
+.p1 {
+  color: rgb(126, 213, 240);
+}
+
+#content1 a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 45px;
+
+}
+
+.a {
+  letter-spacing: 4px
+}
+
+.a2 {
+  font-weight: bold;
+  color: rgb(28, 89, 168);
+}
+
+@media only screen and (max-width: 550px){
+  .container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1.2fr 1.2fr 1.2fr;
+      grid-template-areas:
+      "sidebar"
+      "section"
+      "content1"
+  }
+}

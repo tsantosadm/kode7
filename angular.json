@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "56fae304-8b60-483c-9011-dda92157cc9a"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -26,6 +29,7 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
+            "aot": true,
             "assets": [
               "src/favicon.ico",
               "src/assets"

@@ -1,0 +1,27 @@
+<div class="content">
+  <div *ngFor="let filme of filmes">
+    <mat-card class="mat-elevation-z4 a-card">
+      <mat-card-header id="card-header">
+        <mat-card-title class="title">{{filme.nome}}</mat-card-title>
+      </mat-card-header>
+
+      <mat-card-content id="card-content">
+        <ul>
+          <li><a>Ano:</a>{{filme.ano}}</li>
+          <li><a>Direção:</a>{{filme.diretor}}</li>
+          <li><a>Gênero:</a>{{filme.genero}}</li>
+          <li><a>Descrição:</a>{{filme.descricao}}</li>
+        </ul>
+      </mat-card-content>
+      <mat-card-content id="img">
+        <img
+        [src]="filme.poster"
+        [alt]="filme.nome">
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+</div>
+
+
+
